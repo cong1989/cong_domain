@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>スカイスマッシュアカデミー - 日本語</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>スカイスマッシュアカデミー</h1>
+            <nav>
+                <a href="#about">私たちについて</a>
+                <a href="#program">プログラム</a>
+                <a href="#coaches">コーチ陣</a>
+                <a href="#testimonials">参加者の声</a>
+                <a href="#contact">お問い合わせ</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about" class="section">
+                <h2>私たちについて</h2>
+                <p>スカイスマッシュアカデミーは、4歳から18歳の子供たちがバドミントンのスキルと全体的なフィットネスを向上させるお手伝いをしています。私たちの目標は、若いアスリートが成長できる、フレンドリーでサポートのある環境を提供することです。</p>
+            </section>
+
+            <section id="program" class="section">
+                <h2>プログラム</h2>
+                <p><strong>場所：</strong> シドニー日本国際学校</p>
+                <p><strong>時間：</strong> 毎週金曜日、午後3時30分から5時15分まで</p>
+                <p><strong>対象年齢：</strong> 4〜18歳</p>
+                <p>私たちは、異なるスキルレベルに応じた包括的なトレーニングプログラムを提供しています。プログラムは、スキルの向上、フィットネス、楽しさに重点を置いています！</p>
+            </section>
+
+            <section id="coaches" class="section">
+                <h2>コーチ陣</h2>
+                <p>私たちの経験豊富なコーチをご紹介します。彼らはバドミントンに情熱を持ち、各子供がその潜在能力を引き出すお手伝いをしています。</p>
+                <ul>
+                    <li><strong>コーチ・アレックス：</strong> 元州チャンピオンで、5年以上の経験を持つ認定コーチ。</li>
+                    <li><strong>コーチ・ミア：</strong> 青少年のトレーニングと発展に焦点を当てた情熱的な選手および教育者。</li>
+                    <li><strong>コーチ・リアム：</strong> 楽しさとスキルを重視する経験豊富なコーチ。</li>
+                </ul>
+            </section>
+
+            <section id="testimonials" class="section">
+                <h2>参加者の声</h2>
+                <blockquote>
+                    <p>「スカイスマッシュアカデミーは、娘にとって素晴らしい経験でした。彼女はとても成長し、素晴らしい友達ができました！」 - サラ・L.</p>
+                </blockquote>
+                <blockquote>
+                    <p>「コーチ陣は素晴らしく、トレーニングは挑戦的でありながら楽しいです！」 - トム・K.</p>
+                </blockquote>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>お問い合わせ</h2>
+                <form onsubmit="sendEmail(); return false;">
+                    <label for="name">名前：</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">メールアドレス：</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">メッセージ：</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="button">送信</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 スカイスマッシュアカデミー。全著作権所有。</p>
+            <p>私たちをフォローする <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        </footer>
+    </div>
+
+    <script src="../sendEmail.js"></script>
+</body>
+</html>

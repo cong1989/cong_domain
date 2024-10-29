@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>天际羽毛球学院 - 中文</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>天际羽毛球学院</h1>
+            <nav>
+                <a href="#about">关于我们</a>
+                <a href="#program">课程</a>
+                <a href="#coaches">教练团队</a>
+                <a href="#testimonials">学员评价</a>
+                <a href="#contact">联系我们</a>
+            </nav>
+        </header>
+
+        <main>
+            <section id="about" class="section">
+                <h2>关于我们</h2>
+                <p>天际羽毛球学院致力于帮助4至18岁的孩子提高他们的羽毛球技能和整体身体素质。我们的目标是提供一个友好和支持的环境，让年轻运动员蓬勃发展。</p>
+            </section>
+
+            <section id="program" class="section">
+                <h2>课程</h2>
+                <p><strong>地点：</strong> 悉尼日本国际学校</p>
+                <p><strong>时间：</strong> 每周五，下午3:30至5:15</p>
+                <p><strong>年龄组：</strong> 4-18岁</p>
+                <p>我们提供针对不同技能水平的综合培训课程。我们的课程重点是技能发展、身体素质和乐趣！</p>
+            </section>
+
+            <section id="coaches" class="section">
+                <h2>教练团队</h2>
+                <p>认识我们的经验丰富的教练，他们热爱羽毛球，并致力于帮助每个孩子发挥其潜力。</p>
+                <ul>
+                    <li><strong>教练亚历克斯：</strong> 前州冠军和认证教练，拥有超过5年的经验。</li>
+                    <li><strong>教练米娅：</strong> 一位热情的运动员和教育工作者，专注于青少年训练和发展。</li>
+                    <li><strong>教练利亚姆：</strong> 一位经验丰富的教练，强调在每节课中增加乐趣和技能。</li>
+                </ul>
+            </section>
+
+            <section id="testimonials" class="section">
+                <h2>学员评价</h2>
+                <blockquote>
+                    <p>“天际羽毛球学院为我的女儿提供了美好的体验。她进步很大，并交了很多好朋友！” - 莎拉·L.</p>
+                </blockquote>
+                <blockquote>
+                    <p>“教练们非常出色，训练既具有挑战性又充满乐趣！” - 汤姆·K.</p>
+                </blockquote>
+            </section>
+
+            <section id="contact" class="section">
+                <h2>联系我们</h2>
+                <form onsubmit="sendEmail(); return false;">
+                    <label for="name">姓名：</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">电子邮件：</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">信息：</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit" class="button">提交</button>
+                </form>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2024 天际羽毛球学院。版权所有。</p>
+            <p>关注我们 <a href="#">Instagram</a> | <a href="#">Facebook</a></p>
+        </footer>
+    </div>
+
+    <script src="../sendEmail.js"></script>
+</body>
+</html>
