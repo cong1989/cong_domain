@@ -16,7 +16,7 @@ function sendEmail() {
     // Send the email using EmailJS
     emailjs.send("service_ksh6qfs", "template_p9ht8lx", templateParams)
     .then(response => {
-        alert("Email sent successfully!");
+        alert("Request made successfully!");
     })
     .catch(error => {
         console.error("Failed to send email:", error);
