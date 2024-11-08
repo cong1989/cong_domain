@@ -6,7 +6,7 @@ function sendEmail() {
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    // Define the parameters to match your EmailJS template fields
+    // Define the parameters to match your EmailJS template fieldsg
     const templateParams = {
         from_name: name,
         from_email: email,
