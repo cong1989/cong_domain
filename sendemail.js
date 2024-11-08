@@ -1,5 +1,5 @@
 // Initialize EmailJS in your HTML file or JavaScript file, using your User ID
-emailjs.init("yoshiminakajima24@gmail.com"); // Replace "YOUR_USER_ID" with your actual EmailJS User ID
+emailjs.init("-lzcCFg-HM2pGc6xc"); // Replace "YOUR_USER_ID" with your actual EmailJS User ID
 
 function sendEmail() {
     const name = document.getElementById("name").value;
