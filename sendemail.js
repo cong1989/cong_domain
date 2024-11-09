@@ -1,9 +1,25 @@
+// Initialize EmailJS in your HTML file or JavaScript file, using your User ID
+emailjs.init("-lzcCFg-HM2pGc6xc"); // Replace "YOUR_USER_ID" with your actual EmailJS User ID
+
 function sendEmail() {
     const name = document.getElementById("name").value;
     const email = document.getElementById("email").value;
     const message = document.getElementById("message").value;
 
-    const mailtoLink = `mailto:yoshiminakajima810@gmail.com?subject=Message%20from%20${encodeURIComponent(name)}&body=Name:%20${encodeURIComponent(name)}%0AEmail:%20${encodeURIComponent(email)}%0AMessage:%20${encodeURIComponent(message)}`;
+    // Define the parameters to match your EmailJS template fieldsg
+    const templateParams = {
+        from_name: name,
+        from_email: email,
+        message: message
+    };
 
-    window.location.href = mailtoLink;
+    // Send the email using EmailJS
+    emailjs.send("service_ksh6qfs", "template_p9ht8lx", templateParams)
+    .then(response => {
+        alert("Request made successfully!");
+    })
+    .catch(error => {
+        console.error("Failed to send email:", error);
+        alert("There was an error sending the email.");
+    });
 }
